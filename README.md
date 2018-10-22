@@ -21,7 +21,7 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 Vulnerability #1: _____SQL Injection___
 
 GIF Walkthrough: 
-
+<img src='blue1.gif' width=800>
 
 * The exploit is in the URL https://35.184.88.145/blue/public/staff/salespeople/show.php?id=????
 * put 'OR SLEEP(5)=0--' to replace ??. The 5 means sleeping for 5 seconds.
@@ -29,6 +29,7 @@ GIF Walkthrough:
 Vulnerability #2: _____Session Hijacking_______
 
 GIF Walkthrough: 
+<img src='blue2.gif' width=800>
 
 * First log in on Chrome and get the session ID at public/hacktools/change_session_id.php page
 * Change the sessionID at public/hacktools/change_session_id.php from a different browser
@@ -40,13 +41,15 @@ GIF Walkthrough:
 Vulnerability #1: _____XSS_________
 
 GIF Walkthrough: 
+<img src='green1.gif' width=800>
 
 * This exploit is done via the feedback section.
 * You can view the injection in the "Feedback" section
 
 Vulnerability #2: _____User Enumeration____
 
-GIF Walkthrough: 
+GIF Walkthrough:
+<img src='green2.gif' width=800>
 
 * Using the given username "pperson" we can see that a valid username shows a bold error.
 * An incorrect username shows a not-bolded error.
@@ -56,6 +59,7 @@ GIF Walkthrough:
 Vulnerability #1: ______IDOR______
 
 GIF Walkthrough:
+<img src='red1.gif' width=800>
 
 * Do not log in
 * Change the id to find the user which is not published yet
@@ -63,7 +67,9 @@ GIF Walkthrough:
 Vulnerability #2: ______CSRF______
 
 GIF Walkthrough:
+<img src='red2.gif' width=800>
 
+* Attackers can change the user information without login
 ## Notes
 
 Describe any challenges encountered while doing the work
